@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVGrind - Where Academic Excellence Meets Silicon Valley Hustle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-purple-50 font-['Poppins']">
+    <nav class="bg-purple-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">MVGrind</h1>
+            <div class="flex space-x-4">
+                <span class="text-yellow-300">Sleep Debt: 16hrs</span>
+                <span class="text-green-300">Startups Created: 3/day</span>
+                <span class="text-red-300">GPA: 4.83/5.0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4">
+        <!-- Status Update Form -->
+        <div class="bg-white rounded-lg p-6 shadow-lg mb-6">
+            <h2 class="text-xl font-bold mb-4">Daily Achievement Post</h2>
+            <textarea 
+                class="w-full p-4 border rounded-lg mb-4" 
+                placeholder="Share your quantum mechanics-inspired startup idea (minimum 5 scientific buzzwords required)"
+            ></textarea>
+            <div class="flex justify-between items-center">
+                <div class="space-x-4">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">
+                        Add Humble Brag
+                    </button>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
+                        Mention Ivy League
+                    </button>
+                </div>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-lg">
+                    Post Achievement
+                </button>
+            </div>
+        </div>
+
+        <!-- Achievement Feed -->
+        <div class="space-y-6">
+            <!-- Sample Post -->
+            <div class="bg-white rounded-lg p-6 shadow-lg">
+                <div class="flex justify-between mb-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://placekitten.com/50/50" class="rounded-full">
+                        <div>
+                            <h3 class="font-bold">Jane Quantum</h3>
+                            <p class="text-sm text-gray-500">4.95 GPA • 12 Startups • 0.5hrs sleep/night</p>
+                        </div>
+                    </div>
+                    <span class="text-purple-600">Productivity Score: 9.8/10</span>
+                </div>
+                <p class="mb-4">
+                    Just casually developed a quantum blockchain AI startup at 3am while studying for my 
+                    AP Physics C exam (got a perfect score btw, not that it matters 🤪). 
+                    #QuantumMechanics #Metaphysics #StanfordBound #Humble
+                </p>
+                <div class="flex space-x-4 text-sm text-gray-600">
+                    <button class="flex items-center space-x-1">
+                        <span>🏆 Impressive</span>
+                        <span>2.4k</span>
+                    </button>
+                    <button class="flex items-center space-x-1">
+                        <span>📚 Too Easy</span>
+                        <span>1.2k</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Warning Modal -->
+    <div id="warningModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg max-w-md">
+            <h2 class="text-xl font-bold text-red-600 mb-4">⚠️ Achievement Warning!</h2>
+            <p class="mb-4">Your post contains insufficient academic pressure. Please add at least:</p>
+            <ul class="list-disc ml-6 mb-4">
+                <li>3 more extracurriculars</li>
+                <li>2 more startup ideas</li>
+                <li>1 mention of sleep deprivation</li>
+            </ul>
+            <button class="bg-red-600 text-white px-4 py-2 rounded-lg w-full">
+                Accept Academic Punishment
+            </button>
+        </div>
+    </div>
+</body>
+</html> 
